@@ -1,0 +1,17 @@
+{% load i18n %}
+
+{% block subject %}
+{% blocktrans %}Account activated on {{ site_name }}{% endblocktrans %}
+{% endblock subject %}
+{% block text_body %}
+{% blocktrans %}You're receiving this email because your account has been successfully activated on {{ site_name }}.{% endblocktrans %}
+
+
+{% trans "Thank you. Sincerely,!" %}
+
+{% blocktrans %}The Quick Pay Support Team team
+
+This is an automated message. Please do not reply to this email.{% endblocktrans %}
+
+
+{% endblock text_body %}
